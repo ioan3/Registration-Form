@@ -20,21 +20,23 @@
 
 <body class="bg-light BPGbanner">
     <div class="container">
-
-        <div class="col-lg-3 col-md-5 pt-5 pb-3 mx-auto mt-5 rounded-lg bg-dark" style="box-shadow: 5px 5px 5px gray; margin-top:10% !important;">
+        <div class="col-lg-3 col-md-5 pt-5 pb-3 mx-auto mt-5 rounded-lg bg-dark" style="box-shadow: 5px 5px 5px gray; margin-top:8% !important;">
             <img src="Images/User_Icon.png" class="userIcon item-unselectable" unselectable="on">
             <form class="col-12 mx-auto">
                 <h4 class="pb-3 text-center text-light tavdrigina text-unselectable">რეგისტრაცია</h4>
 
-                <input id="firstName" type="text" class="rounded-1 form-control form-control-md mb-2" placeholder="სახელი" onfocusout="CheckFirstName()" oninput="onFirstNameTextChanged()" autocomplete="off">
+                <input id="firstName" type="text" class="rounded-1 form-control form-control-md mb-2" placeholder="სახელი" onfocusout="CheckFirstName()" oninput="onFirstNameTextChanged()"
+                    autocomplete="off">
 
-                <input id="lastName" type="text" class="rounded-1 form-control form-control-md  mb-2" placeholder="გვარი" onfocusout="CheckLastName()" oninput="onLastNameTextChanged()" autocomplete="off">
+                <input id="lastName" type="text" class="rounded-1 form-control form-control-md  mb-2" placeholder="გვარი" onfocusout="CheckLastName()" oninput="onLastNameTextChanged()"
+                    autocomplete="off">
 
                 <input id="Mail" type="email" class="rounded-1 form-control form-control-md  mb-2" placeholder="მეილი" onfocusout="CheckMail()" oninput="onMailTextChanged()" autocomplete="off">
 
-                <input id="Password" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="პაროლი" onfocusout="CheckPassword()" oninput="onPasswordTextChanged()" autocomplete="off">
+                <input id="Password" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="პაროლი" onfocusout="CheckPassword()" oninput="onPasswordTextChanged()"
+                    autocomplete="off">
 
-                <input id="repeatPassword" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="გაიმეორეთ პაროლი" oninput="onRepeatPasswordChanged()" autocomplete="off">
+                <input id="repeatPassword" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="გაიმეორეთ პაროლი" onfocusout="CheckRepeatPassword()" oninput="onRepeatPasswordChanged()" autocomplete="off">
 
                 <div class="form-check  text-unselectable">
                     <input id="checkBox" type="checkbox" class="form-check-input" style="margin-top: 6px;" onclick="CheckIfChecked()">
@@ -46,6 +48,7 @@
                 <button type="button" class="btn btn-light col-12 mt-4" onclick="Register()">დასრულება</button>
             </form>
         </div>
+        <p id="emptyField" class="text-center mt-3 text-unselectable"></p>
     </div>
 
     <script src="JS/registration.js"></script>
