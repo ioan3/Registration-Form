@@ -1,0 +1,19 @@
+.userIcon {
+    width: 90px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+.rounded-1 {
+    border-radius: 0.15rem;
+}
+
+.text-unselectable {
+    user-select: none !important;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+}
+.item-unselectable {
+    pointer-events: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
+    <link rel="stylesheet" href="css\bootstrap-reboot.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .plWhite::placeholder {
+            color: white;
+            text-shadow: 0 0 1px #dc3545;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+
+        <div class="col-lg-3 col-md-5 pt-5 pb-3 mx-auto mt-5 rounded-lg bg-dark" style="box-shadow: 5px 5px 5px gray; margin-top:10% !important;">
+            <img src="Images/User_Icon.png" class="userIcon">
+
+            <form class="col-12 mx-auto">
+                <h4 class="pb-3 text-center text-light">Registration</h4>
+
+                <input id="firstName" type="text" class="rounded-1 form-control form-control-md mb-2" placeholder="First Name" onfocusout="CheckFirstName()" oninput="onFirstNameTextChanged()">
+
+                <input id="lastName" type="text" class="rounded-1 form-control form-control-md  mb-2" placeholder="Last Name" onfocusout="CheckLastName()" oninput="onLastNameTextChanged()">
+
+                <input id="Mail" type="email" class="rounded-1 form-control form-control-md  mb-2" placeholder="example@gmail.com" onfocusout="CheckMail()" oninput="onMailTextChanged()">
+
+                <input id="Password" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="Password" onfocusout="CheckPassword()" oninput="onPasswordTextChanged()">
+
+                <input id="repeatPassword" type="password" class="rounded-1 form-control form-control-md mb-2" placeholder="Repeat Password" oninput="onRepeatPasswordChanged()">
+
+                <div class="form-check">
+                    <input id="checkBox" type="checkbox" class="form-check-input" style="margin-top: 6px;" onclick="CheckIfChecked()">
+                    <label id="checkLabel" for="checkBox" class="form-check-label text-light" style="font-size: 0.9em;" onclick="CheckIfChecked()">Accept Terms And Conditions</label>
+                </div>
+
+                <label id="passwordMessage"></label>
+
+                <button type="button" class="btn btn-light col-12 mt-4" onclick="Register()">Finish</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/registrationEn.js"></script>
+</body>
+
+</html>

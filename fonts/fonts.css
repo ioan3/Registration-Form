@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "tavdrigina";
+    src: url(lgv-tavdrigina.ttf);
+}
+
+.tavdrigina {
+    font-family: "tavdrigina";
+}
+
+@font-face {
+    font-family: "BPGbanner";
+    src: url(bpg-banner-webfont.ttf);
+}
+
+.BPGbanner {
+    font-family: "BPGbanner";
+}
